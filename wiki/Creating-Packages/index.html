@@ -316,19 +316,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/python-ecosystem/" class="md-nav__link">
-      Python ecosystem
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
     <a href="../../docs/filesystem-paths/" class="md-nav__link">
       Filesystem Paths
     </a>
@@ -1117,22 +1104,6 @@
 <h2 id="general-information">General information</h2>
 <p>There are 3 package repositories, <strong>msys</strong>, <strong>mingw32</strong>, and <strong>mingw64</strong>. <strong>msys</strong> software (from the <strong>msys</strong> repository) is software that depends on <code>msys-2.0.dll</code> and is very similar to Cygwin software (which is a POSIX emulation layer for Windows). Native Windows software (from this project's perspective) is software that doesn't depend on <code>msys-2.0.dll</code>, and links dynamically to the highly compatible <code>msvcrt.dll</code>.</p>
 <p>In this document, to attempt to avoid confusion, MSYS2 refers to the software distribution while <strong>msys</strong> refers to the repository, the packages in that repository and the software in those packages that link to <code>msys-2.0.dll</code>.</p>
-<p>TODO: <a href="https://github.com/msys2/MINGW-packages/issues/7041#issuecomment-757337594">msys2/MINGW-packages#7041@issuecomment-757337594</a></p>
-<blockquote>
-<p><code>arch</code> relates to MSYS2 architecture, package with <code>arch=('x86_64')</code> would be installable only on 64-bit MSYS2 but the package would be still built for <code>mingw32</code> and <code>mingw64</code> subsystems.</p>
-<p>If it was <code>arch=(i686, x86_64)</code> then every <code>mingwXY</code> package would be built 4 times:</p>
-<ul>
-<li>i686 MSYS2 mingw32</li>
-<li>i686 MSYS2 mingw64</li>
-<li>x86_64 MSYS2 mingw32</li>
-<li>x86_64 MSYS mingw64</li>
-</ul>
-<p>So <code>('any')</code> in <code>arch</code> reduces it to just 2 builds:</p>
-<ul>
-<li>any MSYS2 mingw32</li>
-<li>any MSYS2 mingw64</li>
-</ul>
-</blockquote>
 <h3 id="package-recipes">Package recipes</h3>
 <p>Packages are built from programmatic recipes to ensure builds are reproducible. A recipe is a set of files which describe how to build, package and install a given piece of software; these are often specific to MSYS2.</p>
 <p>In the simplest form it is a single file named <code>PKGBUILD</code>, which contains metadata for the package, a specification where the source for the given software can be found, and a few lines of code which that takes the source and builds the final software from it. For more complex cases it also contains install scripts or a number of patch files which are needed to be applied on the released version of the upstream software in order to be able to compile and work in the given environment.</p>
