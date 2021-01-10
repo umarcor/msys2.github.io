@@ -61,6 +61,7 @@ nav:
         - docs/who-is-using-msys2.md
         - docs/terminals.md
         - docs/package-management.md
+        - docs/python-ecosystem.md
         - docs/filesystem-paths.md
     - Development:
         # For MSYS2 developers, maintaining, creating packages, porting packages,
