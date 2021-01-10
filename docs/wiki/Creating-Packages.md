@@ -11,6 +11,22 @@ There are 3 package repositories, **msys**, **mingw32**, and **mingw64**. **msys
 
 In this document, to attempt to avoid confusion, MSYS2 refers to the software distribution while **msys** refers to the repository, the packages in that repository and the software in those packages that link to `msys-2.0.dll`.
 
+TODO: [msys2/MINGW-packages#7041@issuecomment-757337594](https://github.com/msys2/MINGW-packages/issues/7041#issuecomment-757337594)
+
+> `arch` relates to MSYS2 architecture, package with `arch=('x86_64')` would be installable only on 64-bit MSYS2 but the package would be still built for `mingw32` and `mingw64` subsystems.
+>
+> If it was `arch=(i686, x86_64)` then every `mingwXY` package would be built 4 times:
+>
+> * i686 MSYS2 mingw32
+> * i686 MSYS2 mingw64
+> * x86_64 MSYS2 mingw32
+> * x86_64 MSYS mingw64
+>
+> So `('any')` in `arch` reduces it to just 2 builds:
+>
+> * any MSYS2 mingw32
+> * any MSYS2 mingw64
+
 ### Package recipes
 
 Packages are built from programmatic recipes to ensure builds are reproducible. A recipe is a set of files which describe how to build, package and install a given piece of software; these are often specific to MSYS2.
