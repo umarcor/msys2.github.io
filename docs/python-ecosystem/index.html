@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://www.msys2.org/wiki/Terminals/">
+        <link rel="canonical" href="https://www.msys2.org/docs/python-ecosystem/">
       
       <link rel="shortcut icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>Terminals - MSYS2</title>
+        <title>Python ecosystem - MSYS2</title>
       
     
     
@@ -55,10 +55,10 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="MSYS2 - Terminals" />
-<meta property="og:description" content="This is a basic explanation of how console programs work in Cygwin and MSYS2." />
+<meta property="og:title" content="MSYS2 - Python ecosystem" />
+<meta property="og:description" content="" />
 
-<meta property="og:url" content="https://www.msys2.org/wiki/Terminals/" />
+<meta property="og:url" content="https://www.msys2.org/docs/python-ecosystem/" />
 <meta property="og:image" content="https://www.msys2.org/logo.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="250" />
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#terminals" class="md-skip">
+        <a href="#packaging-pip-vs-pacman" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Terminals
+              Python ecosystem
             
           </span>
         </div>
@@ -259,12 +259,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Documentation
@@ -285,7 +287,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/what-is-msys2/" class="md-nav__link">
+    <a href="../what-is-msys2/" class="md-nav__link">
       What is MSYS2?
     </a>
   </li>
@@ -298,7 +300,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/ci/" class="md-nav__link">
+    <a href="../ci/" class="md-nav__link">
       Using MSYS2 in CI
     </a>
   </li>
@@ -311,7 +313,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/who-is-using-msys2/" class="md-nav__link">
+    <a href="../who-is-using-msys2/" class="md-nav__link">
       Who Is Using MSYS2?
     </a>
   </li>
@@ -324,7 +326,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/terminals/" class="md-nav__link">
+    <a href="../terminals/" class="md-nav__link">
       Terminals
     </a>
   </li>
@@ -337,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/package-management/" class="md-nav__link">
+    <a href="../package-management/" class="md-nav__link">
       Package Management
     </a>
   </li>
@@ -348,11 +350,79 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../docs/python-ecosystem/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Python ecosystem
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Python ecosystem
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#packaging-pip-vs-pacman" class="md-nav__link">
+    Packaging: PIP vs Pacman
+  </a>
+  
+    <nav class="md-nav" aria-label="Packaging: PIP vs Pacman">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-users" class="md-nav__link">
+    For users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-developersmaintainers" class="md-nav__link">
+    For developers/maintainers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python-python-vs-mingw-w64-python" class="md-nav__link">
+    Installing Python: python vs mingw-w64-*-python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues-and-workarounds" class="md-nav__link">
+    Known issues and workarounds
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -363,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docs/filesystem-paths/" class="md-nav__link">
+    <a href="../filesystem-paths/" class="md-nav__link">
       Filesystem Paths
     </a>
   </li>
@@ -434,14 +504,12 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
     
     <label class="md-nav__link" for="nav-5">
       Other Topics
@@ -462,7 +530,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Home/" class="md-nav__link">
+    <a href="../../wiki/Home/" class="md-nav__link">
       Welcome to the MSYS2 wiki
     </a>
   </li>
@@ -475,7 +543,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Contributing-to-MSYS2/" class="md-nav__link">
+    <a href="../../wiki/Contributing-to-MSYS2/" class="md-nav__link">
       Contributing to MSYS2
     </a>
   </li>
@@ -488,7 +556,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Creating-Packages/" class="md-nav__link">
+    <a href="../../wiki/Creating-Packages/" class="md-nav__link">
       Creating Packages
     </a>
   </li>
@@ -501,7 +569,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Devtopics/" class="md-nav__link">
+    <a href="../../wiki/Devtopics/" class="md-nav__link">
       TODO LIST
     </a>
   </li>
@@ -514,7 +582,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Distributing/" class="md-nav__link">
+    <a href="../../wiki/Distributing/" class="md-nav__link">
       Distributing
     </a>
   </li>
@@ -527,7 +595,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FAQ/" class="md-nav__link">
+    <a href="../../wiki/FAQ/" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -540,7 +608,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../GDB-qtcreator/" class="md-nav__link">
+    <a href="../../wiki/GDB-qtcreator/" class="md-nav__link">
       Qt Creator
     </a>
   </li>
@@ -553,7 +621,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../History/" class="md-nav__link">
+    <a href="../../wiki/History/" class="md-nav__link">
       MSYS2 History
     </a>
   </li>
@@ -566,7 +634,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../How-does-MSYS2-differ-from-Cygwin/" class="md-nav__link">
+    <a href="../../wiki/How-does-MSYS2-differ-from-Cygwin/" class="md-nav__link">
       How does MSYS2 differ from Cygwin?
     </a>
   </li>
@@ -579,7 +647,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Launchers/" class="md-nav__link">
+    <a href="../../wiki/Launchers/" class="md-nav__link">
       Lauchers
     </a>
   </li>
@@ -592,7 +660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../MSYS2-installation/" class="md-nav__link">
+    <a href="../../wiki/MSYS2-installation/" class="md-nav__link">
       MSYS2-Installation
     </a>
   </li>
@@ -605,7 +673,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../MSYS2-introduction/" class="md-nav__link">
+    <a href="../../wiki/MSYS2-introduction/" class="md-nav__link">
       MSYS2-Introduction
     </a>
   </li>
@@ -618,7 +686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../MSYS2-reinstallation/" class="md-nav__link">
+    <a href="../../wiki/MSYS2-reinstallation/" class="md-nav__link">
       Re-installing MSYS2
     </a>
   </li>
@@ -631,7 +699,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Packages/" class="md-nav__link">
+    <a href="../../wiki/Packages/" class="md-nav__link">
       Packages List
     </a>
   </li>
@@ -644,7 +712,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Porting/" class="md-nav__link">
+    <a href="../../wiki/Porting/" class="md-nav__link">
       Porting
     </a>
   </li>
@@ -657,7 +725,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Setting-up-SSHd/" class="md-nav__link">
+    <a href="../../wiki/Setting-up-SSHd/" class="md-nav__link">
       Setting up SSHd
     </a>
   </li>
@@ -670,7 +738,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Signing-packages/" class="md-nav__link">
+    <a href="../../wiki/Signing-packages/" class="md-nav__link">
       Signing Packages
     </a>
   </li>
@@ -683,7 +751,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Sudo/" class="md-nav__link">
+    <a href="../../wiki/Sudo/" class="md-nav__link">
       Do you need Sudo?
     </a>
   </li>
@@ -694,59 +762,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Terminals
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../wiki/Terminals/" class="md-nav__link">
       Terminals
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#terminals" class="md-nav__link">
-    Terminals
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#shells" class="md-nav__link">
-    Shells
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mixing-msys2-and-windows" class="md-nav__link">
-    Mixing MSYS2 and Windows
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -778,22 +798,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#terminals" class="md-nav__link">
-    Terminals
+  <a href="#packaging-pip-vs-pacman" class="md-nav__link">
+    Packaging: PIP vs Pacman
+  </a>
+  
+    <nav class="md-nav" aria-label="Packaging: PIP vs Pacman">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-users" class="md-nav__link">
+    For users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-developersmaintainers" class="md-nav__link">
+    For developers/maintainers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python-python-vs-mingw-w64-python" class="md-nav__link">
+    Installing Python: python vs mingw-w64-*-python
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#shells" class="md-nav__link">
-    Shells
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mixing-msys2-and-windows" class="md-nav__link">
-    Mixing MSYS2 and Windows
+  <a href="#known-issues-and-workarounds" class="md-nav__link">
+    Known issues and workarounds
   </a>
   
 </li>
@@ -810,27 +850,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/msys2/msys2.github.io/edit/source/docs/wiki/Terminals.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/msys2/msys2.github.io/edit/source/docs/docs/python-ecosystem.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Terminals</h1>
+                  <h1>Python ecosystem</h1>
                 
-                <p>This is a basic explanation of how <a href="https://en.wikipedia.org/wiki/Console_application">console programs</a> work in Cygwin and MSYS2. <a href="https://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a> (graphical, windowed) programs fall outside of the scope of this text.</p>
-<p>Note that this topic is not simple and there are many factors that can cause differences in observed behavior (<code>TERM</code>, <code>LANG</code>, <code>LC_*</code>...). The following information is our best understanding and our best attempt at explaining it. If the reader has any corrections or clarifications, please post to the mailing list. Note that where we say MSYS2 below, it usually denotes Cygwin as well.</p>
-<p>MSYS2 (more generally POSIX) and regular Windows (i.e. non-MSYS2 ones) console programs both use character streams to read data from the user and to display data to the user. If reading and writing simple text is the only thing a program does (i.e. it's not interactive), then the program's I/O should be easily portable between Windows, MSYS2 and other platforms.</p>
-<p>On a more advanced level, e.g. when a program employs a <a href="https://en.wikipedia.org/wiki/Read–eval–print_loop">REPL</a> or uses colored output or draws <a href="https://en.wikipedia.org/wiki/Text-based_user_interface">TUIs</a>, the two systems are fundamentally different. MSYS2/POSIX programs use <a href="https://en.wikipedia.org/wiki/ANSI_escape_code">in-band terminal sequences</a>, while Windows programs use out-of-band calls to the <a href="https://en.wikipedia.org/wiki/Win32_console">Windows Console API</a>. In the POSIX world, REPLs are often programmed using the <em>readline</em> library and TUIs using the <em>ncurses</em> library.</p>
-<h2 id="terminals">Terminals</h2>
-<p><a href="https://en.wikipedia.org/wiki/Terminal#Electronics.2C_telecommunication.2C_and_computers">Terminals</a> are programs that interface with console programs and facilitate their input (e.g. accept keypresses from the user and send corresponding characters to the program) and output (e.g. draw the characters from the programs as corresponding glyphs on the screen).</p>
-<p><strong>Mintty</strong> is a terminal emulator built for MSYS2 programs. It provides the necessary POSIX interfaces to MSYS2 programs. There are other terminal emulators in Cygwin, but they're not provided in MSYS2.</p>
-<p>The Windows console (<em>conhost</em>) does the same for Windows programs. It provides the back-end to the Windows Console API.</p>
-<h2 id="shells">Shells</h2>
-<p>A distinct category of programs are <a href="https://en.wikipedia.org/wiki/Shell#Computing">shells</a>. A shell is the actual program that reads commands from the user and runs them.</p>
-<p>The "DOS window" in Windows is actually a combination of a Windows console and the Windows shell (<strong>cmd</strong>, command line). Likewise, when you open a mintty window, you'll probably see the <strong>bash</strong> shell running inside and waiting for your commands. This matching is not mandatory though, as bash can be run in a Windows console and cmd can be run in mintty.</p>
-<h2 id="mixing-msys2-and-windows">Mixing MSYS2 and Windows</h2>
-<p>MSYS2 allows some inter-operation between a MSYS2 program and Windows console and between a Windows program and MSYS2 terminal emulators. For basic stuff, it works fine. Anything more complicated, like colored text, <a href="https://en.wikipedia.org/wiki/Text-based_user_interface">TUIs</a> and <a href="https://en.wikipedia.org/wiki/Line_editor">line editing</a>, is a lottery -- it can work, it can break.</p>
-<p><strong>Winpty</strong> is a wrapper program that works as a translator between Windows programs and MSYS2 terminals. It opens an invisible Windows console window and runs the wrapped program in it. It then relays input from the terminal to the program and output from the program to the terminal. This solves a lot of the issues of running Windows programs in a MSYS2 terminal.</p>
+                <ul>
+<li><a href="https://github.com/msys2/MINGW-packages/pull/7569">msys2/MINGW-packages#7569</a></li>
+<li><a href="https://github.com/msys2/MINGW-packages/discussions/7619">msys2/MINGW-packages/discussions/7619</a></li>
+</ul>
+<h2 id="packaging-pip-vs-pacman">Packaging: PIP vs Pacman</h2>
+<ul>
+<li>Scripting vs compiled.</li>
+<li>Visibility (system vs local/user vs venv).</li>
+</ul>
+<h3 id="for-users">For users</h3>
+<p><em>TBC</em></p>
+<h3 id="for-developersmaintainers">For developers/maintainers</h3>
+<p><em>TBC</em></p>
+<h2 id="installing-python-python-vs-mingw-w64-python">Installing Python: <code>python</code> vs <code>mingw-w64-*-python</code></h2>
+<p><em>TBC</em></p>
+<h2 id="known-issues-and-workarounds">Known issues and workarounds</h2>
+<p><em>TBC</em></p>
                 
                   
                 
@@ -851,7 +894,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../Sudo/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../package-management/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -860,11 +903,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Do you need Sudo?
+                Package Management
               </div>
             </div>
           </a>
         
+        
+          <a href="../filesystem-paths/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Filesystem Paths
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
